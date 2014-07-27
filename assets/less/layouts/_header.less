@@ -1,1 +1,64 @@
-.banner { }
+.header-non-home {
+	height:100px;
+    .container {
+    	position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		.collapse{
+			#menu-primary-navigation {
+			 	float:right;
+			 	font-size:1.2em;
+			 	color:black;
+			 	li {
+			 		a {
+					color: white;
+					text-transform:uppercase;
+					text-shadow: 0px 1px 0px rgba(0,0,0,0.2);
+					}
+			 	}
+			 	.active{
+			 		a{
+			 			background:none;
+			 		}
+				}
+ 			}
+		}
+    }
+    background-color: @brand-main;
+	border-color: @brand-secondary;
+	border-bottom-width:3px;
+ }
+ .header-home {
+	height:400px;
+    .container {
+    	position: relative;
+		top: 7%;
+		transform: translateY(-7%);
+		.collapse{
+			#menu-primary-navigation {
+			 	float:right;
+			 	font-size:1.2em;
+			 	color:black;
+			 	li {
+			 		a {
+					color: white;
+					text-transform:uppercase;
+					text-shadow: 0px 1px 0px rgba(0,0,0,0.2);
+					}
+			 	}
+			 	.active{
+			 		a{
+			 			background:none;
+			 		}
+				}
+ 			}
+		}
+    }
+    background-color: @brand-main;
+	border-color: @brand-secondary;
+	border-bottom-width:3px;
+ }
+
+
+
+
