@@ -1,7 +1,20 @@
 .content-info { 
-	height:250px;
-	background-color: @brand-main;
-	border-color: @brand-secondary;
+	height:175px;
+	background-color: @gray-main;
+	border-color: @gray-secondary;
 	border-top-width:3px;
 	border-top-style: solid;
+	.container{
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		.footer-logo{
+			margin-top:25px;
+			display: table;
+			margin: 0 auto;
+			img{
+				height:100px;
+			}
+		}
+	}
 }

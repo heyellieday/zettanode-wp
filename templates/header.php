@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+      <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" ></a>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">
@@ -18,6 +18,18 @@
         endif;
       ?>
     </nav>
+  </div>
+  <div class="header-home-overlay-img">
+  </div>
+  <div class="header-home-background-color">
+  </div>
+  <div class="col-sm-3">
+  </div>
+  <div class="header-text col-sm-6">
+    <h1 class="header-text-header">Mobile Strategy Designed with Your Customers in Mind</h1>
+    <a class="btn btn-primary" href="#title">Learn More</a>
+  </div>
+  <div class="col-sm-3">
   </div>
 </header>
 <?php } else { ?>
@@ -30,7 +42,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+      <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" ></a>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">

@@ -4,6 +4,14 @@
     	position: relative;
 		top: 50%;
 		transform: translateY(-50%);
+		.navbar-header{
+			margin-top: -15px;
+			.navbar-brand{
+				img{
+					height:50px;
+				}
+			}
+		}
 		.collapse{
 			#menu-primary-navigation {
 			 	float:right;
@@ -11,9 +19,8 @@
 			 	color:black;
 			 	li {
 			 		a {
-					color: white;
+					color: gray;
 					text-transform:uppercase;
-					text-shadow: 0px 1px 0px rgba(0,0,0,0.2);
 					}
 			 	}
 			 	.active{
@@ -24,16 +31,25 @@
  			}
 		}
     }
-    background-color: @brand-main;
-	border-color: @brand-secondary;
-	border-bottom-width:3px;
+    background-color: #f8f8f8;
+	border-color: #e9e9e9;
+	border-bottom-width:2px;
  }
  .header-home {
-	height:400px;
+ 	position:relative;
+	height:70%;
     .container {
     	position: relative;
-		top: 7%;
+		top: 6%;
 		transform: translateY(-7%);
+		.navbar-header{
+			margin-top: -15px;
+			.navbar-brand{
+				img{
+					height:50px;
+				}
+			}
+		}
 		.collapse{
 			#menu-primary-navigation {
 			 	float:right;
@@ -54,9 +70,44 @@
  			}
 		}
     }
-    background-color: @brand-main;
+    .header-home-overlay-img{
+    	position:absolute;
+    	top: 0;
+    	left: 0;
+    	width:100%;
+    	height:100%;
+    	z-index:-2;
+    	background: url(../img/home.jpg) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+
+    }
+    .header-home-background-color{
+    	background-color: @brand-main;
+    	opacity:.5;
+    	position:absolute;
+    	top: 0;
+    	left: 0;
+    	height: 100%;
+		width: 100%;
+		z-index:-1;
+    }
 	border-color: @brand-secondary;
-	border-bottom-width:3px;
+	border-bottom-width:0px;
+	.header-text{
+		position: relative;
+		top: 30%;
+		.header-text-header{
+			text-align:center;
+			color:white;
+		}
+		a{
+		display: table;
+    	margin: 0 auto;
+		}
+	}
  }
 
 
